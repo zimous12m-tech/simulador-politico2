@@ -1,0 +1,79 @@
+{
+  "nome": "Portugal",
+  "ano_base": 2026,
+  "sistemas": {
+    "demografia": {
+      "populacao": 11443231,
+      "idade_media": 45.8,
+      "fertilidade": 1.35,
+      "mortalidade_base": 0.0114,
+      "esperanca_vida": 81.9,
+      "saldo_migratorio_anual": 80000,
+      "composicao_etaria": { "jovens": 0.13, "ativos": 0.63, "reformados": 0.24 }
+    },
+    "economia": {
+      "pib_per_capita": 24500,
+      "produtividade_base": 1.0,
+      "inflacao": 0.024,
+      "desemprego": 0.064,
+      "salario_medio": 17500,
+      "consumo_pct_pib": 0.65,
+      "investimento_pct_pib": 0.20
+    },
+    "externo": {
+      "ano_dados": 2023,
+      "exportacoes_pct_pib": 0.4715547693,
+      "importacoes_pct_pib": 0.4598037678,
+      "conta_corrente_pct_pib": 0.0055352409,
+      "reservas_meses_importacao": 2.6683857786,
+      "cambio_local_usd": 0.9248395585,
+      "divida_externa_pct_rnb": null
+    },
+    "financas": {
+      "divida_pct_pib": 0.957,
+      "juro_medio_divida": 0.027
+    },
+    "trabalho": {
+      "taxa_participacao": 0.62,
+      "desemprego": 0.064,
+      "setores": {
+        "agricultura": 0.045,
+        "industria": 0.18,
+        "servicos": 0.71,
+        "tecnologia": 0.065
+      }
+    },
+    "educacao": {
+      "anos_escolaridade": 10.2,
+      "qualificacao_media": 0.42,
+      "fuga_cerebros": 0.020,
+      "niveis": {
+        "basico": 0.42,
+        "secundario": 0.36,
+        "superior": 0.22
+      }
+    },
+    "estado": {
+      "irs_medio": 0.20,
+      "tsu_media": 0.2375,
+      "iva_medio": 0.23,
+      "outras_pct_pib": 0.05
+    },
+    "habitacao": {
+      "preco_m2": 2800,
+      "renda_media": 1000,
+      "stock_habitacao": 6100000
+    },
+    "sociedade": {
+      "gini": 0.32,
+      "confianca_institucional": 0.48,
+      "satisfacao_vida": 0.62
+    },
+    "clima": {
+      "emissoes_co2_per_capita": 4.3,
+      "percentagem_renovaveis": 0.35,
+      "dependencia_externa": 0.72,
+      "preco_energia_indice": 100
+    }
+  }
+}

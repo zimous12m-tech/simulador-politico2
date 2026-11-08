@@ -1,0 +1,79 @@
+{
+  "nome": "Norway",
+  "iso3": "NOR",
+  "regiao": "Europe & Central Asia",
+  "ano_base": 2026,
+  "_nota": "Gerado automaticamente pelo World Bank + UN WPP. Valores por defeito onde o indicador não existe.",
+  "sistemas": {
+    "demografia": {
+      "populacao": 5519601,
+      "fertilidade": 1.4,
+      "mortalidade_base": 0.0079,
+      "esperanca_vida": 83.0,
+      "saldo_migratorio_anual": 53806,
+      "idade_media": 40.6,
+      "composicao_etaria": {
+        "jovens": 0.135,
+        "ativos": 0.629,
+        "reformados": 0.235
+      }
+    },
+    "economia": {
+      "pib_per_capita": 90984,
+      "inflacao": 0.0552,
+      "desemprego": 0.0357,
+      "crescimento_real_base": 0.008,
+      "salario_medio": 50041,
+      "produtividade_base": 1.0,
+      "consumo_pct_pib": 0.65,
+      "investimento_pct_pib": 0.2
+    },
+    "financas": {
+      "divida_pct_pib": 0.006,
+      "juro_medio_divida": 0.03
+    },
+    "trabalho": {
+      "setores": {
+        "agricultura": 0.023,
+        "industria": 0.176,
+        "servicos": 0.744,
+        "tecnologia": 0.057
+      },
+      "taxa_participacao": 0.659
+    },
+    "educacao": {
+      "anos_escolaridade": 9.5,
+      "qualificacao_media": 0.35,
+      "fuga_cerebros": 0.02,
+      "niveis": {
+        "basico": 0.45,
+        "secundario": 0.35,
+        "superior": 0.2
+      }
+    },
+    "estado": {
+      "irs_medio": 0.2,
+      "tsu_media": 0.2375,
+      "iva_medio": 0.2,
+      "outras_pct_pib": 0.05
+    },
+    "habitacao": {
+      "preco_m2": 8000,
+      "renda_media": 3184,
+      "stock_habitacao": 2759800
+    },
+    "sociedade": {
+      "gini": 0.265,
+      "internet_pct": 0.99,
+      "confianca_institucional": 0.5,
+      "satisfacao_vida": 0.55
+    },
+    "clima": {
+      "percentagem_renovaveis": 0.002,
+      "emissoes_co2_per_capita": 7.53753758650308,
+      "acesso_eletricidade": 1.0,
+      "dependencia_externa": 0.5,
+      "preco_energia_indice": 100
+    }
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "nome": "Eswatini",
+  "iso3": "SWZ",
+  "regiao": "Sub-Saharan Africa ",
+  "ano_base": 2026,
+  "_nota": "Gerado automaticamente pelo World Bank + UN WPP. Valores por defeito onde o indicador não existe.",
+  "sistemas": {
+    "demografia": {
+      "populacao": 1230506,
+      "fertilidade": 2.75,
+      "mortalidade_base": 0.0077,
+      "esperanca_vida": 64.1,
+      "saldo_migratorio_anual": -8549,
+      "idade_media": 22.3,
+      "composicao_etaria": {
+        "jovens": 0.282,
+        "ativos": 0.648,
+        "reformados": 0.071
+      }
+    },
+    "economia": {
+      "pib_per_capita": 3755,
+      "inflacao": 0.0003,
+      "desemprego": 0.3461,
+      "crescimento_real_base": 0.04,
+      "salario_medio": 2065,
+      "produtividade_base": 1.0,
+      "consumo_pct_pib": 0.65,
+      "investimento_pct_pib": 0.2
+    },
+    "financas": {
+      "divida_pct_pib": 0.006,
+      "juro_medio_divida": 0.03
+    },
+    "trabalho": {
+      "setores": {
+        "agricultura": 0.143,
+        "industria": 0.246,
+        "servicos": 0.554,
+        "tecnologia": 0.057
+      },
+      "taxa_participacao": 0.512
+    },
+    "educacao": {
+      "anos_escolaridade": 9.5,
+      "qualificacao_media": 0.35,
+      "fuga_cerebros": 0.02,
+      "niveis": {
+        "basico": 0.45,
+        "secundario": 0.35,
+        "superior": 0.2
+      }
+    },
+    "estado": {
+      "irs_medio": 0.2,
+      "tsu_media": 0.2375,
+      "iva_medio": 0.2,
+      "outras_pct_pib": 0.05
+    },
+    "habitacao": {
+      "preco_m2": 500,
+      "renda_media": 131,
+      "stock_habitacao": 615253
+    },
+    "sociedade": {
+      "gini": 0.004,
+      "internet_pct": 0.613,
+      "confianca_institucional": 0.5,
+      "satisfacao_vida": 0.55
+    },
+    "clima": {
+      "percentagem_renovaveis": 0.647,
+      "emissoes_co2_per_capita": 0.876387437363166,
+      "acesso_eletricidade": 0.864,
+      "dependencia_externa": 0.5,
+      "preco_energia_indice": 100
+    }
+  }
+}

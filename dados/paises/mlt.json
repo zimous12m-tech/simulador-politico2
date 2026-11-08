@@ -1,0 +1,79 @@
+{
+  "nome": "Malta",
+  "iso3": "MLT",
+  "regiao": "Middle East, North Africa, Afghanistan & Pakistan",
+  "ano_base": 2026,
+  "_nota": "Gerado automaticamente pelo World Bank + UN WPP. Valores por defeito onde o indicador não existe.",
+  "sistemas": {
+    "demografia": {
+      "populacao": 552747,
+      "fertilidade": 1.06,
+      "mortalidade_base": 0.0073,
+      "esperanca_vida": 83.4,
+      "saldo_migratorio_anual": 6591,
+      "idade_media": 42.0,
+      "composicao_etaria": {
+        "jovens": 0.124,
+        "ativos": 0.628,
+        "reformados": 0.248
+      }
+    },
+    "economia": {
+      "pib_per_capita": 40932,
+      "inflacao": 0.0509,
+      "desemprego": 0.0348,
+      "crescimento_real_base": 0.012,
+      "salario_medio": 22513,
+      "produtividade_base": 1.0,
+      "consumo_pct_pib": 0.65,
+      "investimento_pct_pib": 0.2
+    },
+    "financas": {
+      "divida_pct_pib": 0.006,
+      "juro_medio_divida": 0.03
+    },
+    "trabalho": {
+      "setores": {
+        "agricultura": 0.01,
+        "industria": 0.17,
+        "servicos": 0.763,
+        "tecnologia": 0.057
+      },
+      "taxa_participacao": 0.643
+    },
+    "educacao": {
+      "anos_escolaridade": 9.5,
+      "qualificacao_media": 0.35,
+      "fuga_cerebros": 0.02,
+      "niveis": {
+        "basico": 0.45,
+        "secundario": 0.35,
+        "superior": 0.2
+      }
+    },
+    "estado": {
+      "irs_medio": 0.2,
+      "tsu_media": 0.2375,
+      "iva_medio": 0.2,
+      "outras_pct_pib": 0.05
+    },
+    "habitacao": {
+      "preco_m2": 4093,
+      "renda_media": 1433,
+      "stock_habitacao": 276373
+    },
+    "sociedade": {
+      "gini": 0.318,
+      "internet_pct": 0.921,
+      "confianca_institucional": 0.5,
+      "satisfacao_vida": 0.55
+    },
+    "clima": {
+      "percentagem_renovaveis": 0.002,
+      "emissoes_co2_per_capita": 3.23421022637843,
+      "acesso_eletricidade": 1.0,
+      "dependencia_externa": 0.5,
+      "preco_energia_indice": 100
+    }
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "nome": "Solomon Islands",
+  "iso3": "SLB",
+  "regiao": "East Asia & Pacific",
+  "ano_base": 2026,
+  "_nota": "Gerado automaticamente pelo World Bank + UN WPP. Valores por defeito onde o indicador não existe.",
+  "sistemas": {
+    "demografia": {
+      "populacao": 800005,
+      "fertilidade": 3.56,
+      "mortalidade_base": 0.0051,
+      "esperanca_vida": 70.5,
+      "saldo_migratorio_anual": 1636,
+      "idade_media": 22.5,
+      "composicao_etaria": {
+        "jovens": 0.28,
+        "ativos": 0.647,
+        "reformados": 0.073
+      }
+    },
+    "economia": {
+      "pib_per_capita": 1882,
+      "inflacao": 0.0589,
+      "desemprego": 0.0144,
+      "crescimento_real_base": 0.05,
+      "salario_medio": 1035,
+      "produtividade_base": 1.0,
+      "consumo_pct_pib": 0.65,
+      "investimento_pct_pib": 0.2
+    },
+    "financas": {
+      "divida_pct_pib": 0.224,
+      "juro_medio_divida": 0.03
+    },
+    "trabalho": {
+      "setores": {
+        "agricultura": 0.406,
+        "industria": 0.074,
+        "servicos": 0.464,
+        "tecnologia": 0.057
+      },
+      "taxa_participacao": 0.843
+    },
+    "educacao": {
+      "anos_escolaridade": 9.5,
+      "qualificacao_media": 0.35,
+      "fuga_cerebros": 0.02,
+      "niveis": {
+        "basico": 0.45,
+        "secundario": 0.35,
+        "superior": 0.2
+      }
+    },
+    "estado": {
+      "irs_medio": 0.2,
+      "tsu_media": 0.2375,
+      "iva_medio": 0.2,
+      "outras_pct_pib": 0.05
+    },
+    "habitacao": {
+      "preco_m2": 500,
+      "renda_media": 66,
+      "stock_habitacao": 400002
+    },
+    "sociedade": {
+      "gini": 0.004,
+      "internet_pct": 0.287,
+      "confianca_institucional": 0.5,
+      "satisfacao_vida": 0.55
+    },
+    "clima": {
+      "percentagem_renovaveis": 0.501,
+      "emissoes_co2_per_capita": 0.374747657827139,
+      "acesso_eletricidade": 0.813,
+      "dependencia_externa": 0.5,
+      "preco_energia_indice": 100
+    }
+  }
+}

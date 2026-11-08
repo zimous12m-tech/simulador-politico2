@@ -1,0 +1,79 @@
+{
+  "nome": "Sao Tome and Principe",
+  "iso3": "STP",
+  "regiao": "Sub-Saharan Africa ",
+  "ano_base": 2026,
+  "_nota": "Gerado automaticamente pelo World Bank + UN WPP. Valores por defeito onde o indicador não existe.",
+  "sistemas": {
+    "demografia": {
+      "populacao": 230871,
+      "fertilidade": 3.64,
+      "mortalidade_base": 0.0056,
+      "esperanca_vida": 69.7,
+      "saldo_migratorio_anual": -592,
+      "idade_media": 19.5,
+      "composicao_etaria": {
+        "jovens": 0.304,
+        "ativos": 0.65,
+        "reformados": 0.046
+      }
+    },
+    "economia": {
+      "pib_per_capita": 2990,
+      "inflacao": 0.2126,
+      "desemprego": 0.0903,
+      "crescimento_real_base": 0.04,
+      "salario_medio": 1645,
+      "produtividade_base": 1.0,
+      "consumo_pct_pib": 0.65,
+      "investimento_pct_pib": 0.2
+    },
+    "financas": {
+      "divida_pct_pib": 0.006,
+      "juro_medio_divida": 0.03
+    },
+    "trabalho": {
+      "setores": {
+        "agricultura": 0.118,
+        "industria": 0.213,
+        "servicos": 0.612,
+        "tecnologia": 0.057
+      },
+      "taxa_participacao": 0.234
+    },
+    "educacao": {
+      "anos_escolaridade": 9.5,
+      "qualificacao_media": 0.35,
+      "fuga_cerebros": 0.02,
+      "niveis": {
+        "basico": 0.45,
+        "secundario": 0.35,
+        "superior": 0.2
+      }
+    },
+    "estado": {
+      "irs_medio": 0.2,
+      "tsu_media": 0.2375,
+      "iva_medio": 0.2,
+      "outras_pct_pib": 0.05
+    },
+    "habitacao": {
+      "preco_m2": 500,
+      "renda_media": 105,
+      "stock_habitacao": 115435
+    },
+    "sociedade": {
+      "gini": 0.004,
+      "internet_pct": 0.587,
+      "confianca_institucional": 0.5,
+      "satisfacao_vida": 0.55
+    },
+    "clima": {
+      "percentagem_renovaveis": 0.425,
+      "emissoes_co2_per_capita": 0.63065521438379,
+      "acesso_eletricidade": 0.813,
+      "dependencia_externa": 0.5,
+      "preco_energia_indice": 100
+    }
+  }
+}

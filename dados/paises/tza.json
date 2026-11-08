@@ -1,0 +1,79 @@
+{
+  "nome": "Tanzania",
+  "iso3": "TZA",
+  "regiao": "Sub-Saharan Africa ",
+  "ano_base": 2026,
+  "_nota": "Gerado automaticamente pelo World Bank + UN WPP. Valores por defeito onde o indicador não existe.",
+  "sistemas": {
+    "demografia": {
+      "populacao": 66617606,
+      "fertilidade": 4.61,
+      "mortalidade_base": 0.0058,
+      "esperanca_vida": 67.0,
+      "saldo_migratorio_anual": -39388,
+      "idade_media": 18.0,
+      "composicao_etaria": {
+        "jovens": 0.316,
+        "ativos": 0.652,
+        "reformados": 0.032
+      }
+    },
+    "economia": {
+      "pib_per_capita": 1224,
+      "inflacao": 0.038,
+      "desemprego": 0.0157,
+      "crescimento_real_base": 0.05,
+      "salario_medio": 673,
+      "produtividade_base": 1.0,
+      "consumo_pct_pib": 0.65,
+      "investimento_pct_pib": 0.2
+    },
+    "financas": {
+      "divida_pct_pib": 0.006,
+      "juro_medio_divida": 0.03
+    },
+    "trabalho": {
+      "setores": {
+        "agricultura": 0.615,
+        "industria": 0.075,
+        "servicos": 0.253,
+        "tecnologia": 0.057
+      },
+      "taxa_participacao": 0.838
+    },
+    "educacao": {
+      "anos_escolaridade": 9.5,
+      "qualificacao_media": 0.35,
+      "fuga_cerebros": 0.02,
+      "niveis": {
+        "basico": 0.45,
+        "secundario": 0.35,
+        "superior": 0.2
+      }
+    },
+    "estado": {
+      "irs_medio": 0.2,
+      "tsu_media": 0.2375,
+      "iva_medio": 0.2,
+      "outras_pct_pib": 0.05
+    },
+    "habitacao": {
+      "preco_m2": 500,
+      "renda_media": 43,
+      "stock_habitacao": 33308803
+    },
+    "sociedade": {
+      "gini": 0.004,
+      "internet_pct": 0.284,
+      "confianca_institucional": 0.5,
+      "satisfacao_vida": 0.55
+    },
+    "clima": {
+      "percentagem_renovaveis": 0.002,
+      "emissoes_co2_per_capita": 0.323839316591473,
+      "acesso_eletricidade": 0.483,
+      "dependencia_externa": 0.5,
+      "preco_energia_indice": 100
+    }
+  }
+}

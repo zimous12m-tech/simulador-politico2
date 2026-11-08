@@ -1,0 +1,79 @@
+{
+  "nome": "Brazil",
+  "iso3": "BRA",
+  "regiao": "Latin America & Caribbean ",
+  "ano_base": 2026,
+  "_nota": "Gerado automaticamente pelo World Bank + UN WPP. Valores por defeito onde o indicador não existe.",
+  "sistemas": {
+    "demografia": {
+      "populacao": 211140729,
+      "fertilidade": 1.62,
+      "mortalidade_base": 0.0071,
+      "esperanca_vida": 75.8,
+      "saldo_migratorio_anual": -240059,
+      "idade_media": 33.5,
+      "composicao_etaria": {
+        "jovens": 0.192,
+        "ativos": 0.637,
+        "reformados": 0.171
+      }
+    },
+    "economia": {
+      "pib_per_capita": 10377,
+      "inflacao": 0.0459,
+      "desemprego": 0.0795,
+      "crescimento_real_base": 0.02,
+      "salario_medio": 5707,
+      "produtividade_base": 1.0,
+      "consumo_pct_pib": 0.65,
+      "investimento_pct_pib": 0.2
+    },
+    "financas": {
+      "divida_pct_pib": 0.83,
+      "juro_medio_divida": 0.03
+    },
+    "trabalho": {
+      "setores": {
+        "agricultura": 0.077,
+        "industria": 0.191,
+        "servicos": 0.675,
+        "tecnologia": 0.057
+      },
+      "taxa_participacao": 0.629
+    },
+    "educacao": {
+      "anos_escolaridade": 9.5,
+      "qualificacao_media": 0.35,
+      "fuga_cerebros": 0.02,
+      "niveis": {
+        "basico": 0.45,
+        "secundario": 0.35,
+        "superior": 0.2
+      }
+    },
+    "estado": {
+      "irs_medio": 0.2,
+      "tsu_media": 0.2375,
+      "iva_medio": 0.2,
+      "outras_pct_pib": 0.05
+    },
+    "habitacao": {
+      "preco_m2": 1038,
+      "renda_media": 363,
+      "stock_habitacao": 105570364
+    },
+    "sociedade": {
+      "gini": 0.515,
+      "internet_pct": 0.842,
+      "confianca_institucional": 0.5,
+      "satisfacao_vida": 0.55
+    },
+    "clima": {
+      "percentagem_renovaveis": 0.002,
+      "emissoes_co2_per_capita": 2.27447826989363,
+      "acesso_eletricidade": 0.998,
+      "dependencia_externa": 0.5,
+      "preco_energia_indice": 100
+    }
+  }
+}

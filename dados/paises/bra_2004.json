@@ -1,0 +1,68 @@
+{
+  "nome": "Brasil 2004",
+  "ano_base": 2004,
+  "_nota": "Dados reais de 2004 — para validação histórica",
+  "sistemas": {
+    "demografia": {
+      "populacao": 183000000,
+      "idade_media": 27.5,
+      "fertilidade": 2.10,
+      "mortalidade_base": 0.0065,
+      "esperanca_vida": 71.5,
+      "saldo_migratorio_anual": 10000,
+      "composicao_etaria": { "jovens": 0.28, "ativos": 0.65, "reformados": 0.07 }
+    },
+    "economia": {
+      "pib_per_capita": 3600,
+      "produtividade_base": 1.0,
+      "crescimento_real_base": 0.020,
+      "inflacao": 0.066,
+      "desemprego": 0.088,
+      "salario_medio": 2500,
+      "consumo_pct_pib": 0.62,
+      "investimento_pct_pib": 0.18
+    },
+    "financas": {
+      "divida_pct_pib": 0.70,
+      "juro_medio_divida": 0.09
+    },
+    "trabalho": {
+      "taxa_participacao": 0.60,
+      "desemprego": 0.088,
+      "setores": {
+        "agricultura": 0.20,
+        "industria": 0.21,
+        "servicos": 0.55,
+        "tecnologia": 0.04
+      }
+    },
+    "educacao": {
+      "anos_escolaridade": 6.5,
+      "qualificacao_media": 0.20,
+      "fuga_cerebros": 0.01,
+      "niveis": { "basico": 0.60, "secundario": 0.28, "superior": 0.12 }
+    },
+    "estado": {
+      "irs_medio": 0.20,
+      "tsu_media": 0.30,
+      "iva_medio": 0.18,
+      "outras_pct_pib": 0.10
+    },
+    "habitacao": {
+      "preco_m2": 700,
+      "renda_media": 300,
+      "stock_habitacao": 55000000
+    },
+    "sociedade": {
+      "gini": 0.58,
+      "confianca_institucional": 0.35,
+      "satisfacao_vida": 0.55
+    },
+    "clima": {
+      "emissoes_co2_per_capita": 1.8,
+      "percentagem_renovaveis": 0.40,
+      "dependencia_externa": 0.30,
+      "preco_energia_indice": 100
+    }
+  }
+}

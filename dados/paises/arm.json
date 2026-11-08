@@ -1,0 +1,79 @@
+{
+  "nome": "Armenia",
+  "iso3": "ARM",
+  "regiao": "Europe & Central Asia",
+  "ano_base": 2026,
+  "_nota": "Gerado automaticamente pelo World Bank + UN WPP. Valores por defeito onde o indicador não existe.",
+  "sistemas": {
+    "demografia": {
+      "populacao": 2964300,
+      "fertilidade": 1.9,
+      "mortalidade_base": 0.0082,
+      "esperanca_vida": 77.5,
+      "saldo_migratorio_anual": 75000,
+      "idade_media": 36.6,
+      "composicao_etaria": {
+        "jovens": 0.167,
+        "ativos": 0.633,
+        "reformados": 0.199
+      }
+    },
+    "economia": {
+      "pib_per_capita": 8159,
+      "inflacao": 0.0198,
+      "desemprego": 0.124,
+      "crescimento_real_base": 0.03,
+      "salario_medio": 4487,
+      "produtividade_base": 1.0,
+      "consumo_pct_pib": 0.65,
+      "investimento_pct_pib": 0.2
+    },
+    "financas": {
+      "divida_pct_pib": 0.481,
+      "juro_medio_divida": 0.03
+    },
+    "trabalho": {
+      "setores": {
+        "agricultura": 0.265,
+        "industria": 0.193,
+        "servicos": 0.485,
+        "tecnologia": 0.057
+      },
+      "taxa_participacao": 0.6
+    },
+    "educacao": {
+      "anos_escolaridade": 9.5,
+      "qualificacao_media": 0.35,
+      "fuga_cerebros": 0.02,
+      "niveis": {
+        "basico": 0.45,
+        "secundario": 0.35,
+        "superior": 0.2
+      }
+    },
+    "estado": {
+      "irs_medio": 0.2,
+      "tsu_media": 0.2375,
+      "iva_medio": 0.2,
+      "outras_pct_pib": 0.05
+    },
+    "habitacao": {
+      "preco_m2": 816,
+      "renda_media": 286,
+      "stock_habitacao": 1482150
+    },
+    "sociedade": {
+      "gini": 0.272,
+      "internet_pct": 0.8,
+      "confianca_institucional": 0.5,
+      "satisfacao_vida": 0.55
+    },
+    "clima": {
+      "percentagem_renovaveis": 0.002,
+      "emissoes_co2_per_capita": 2.52966973653139,
+      "acesso_eletricidade": 1.0,
+      "dependencia_externa": 0.5,
+      "preco_energia_indice": 100
+    }
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "nome": "Kazakhstan",
+  "iso3": "KAZ",
+  "regiao": "Europe & Central Asia",
+  "ano_base": 2026,
+  "_nota": "Gerado automaticamente pelo World Bank + UN WPP. Valores por defeito onde o indicador não existe.",
+  "sistemas": {
+    "demografia": {
+      "populacao": 20330104,
+      "fertilidade": 3.01,
+      "mortalidade_base": 0.0067,
+      "esperanca_vida": 74.4,
+      "saldo_migratorio_anual": -4822,
+      "idade_media": 31.6,
+      "composicao_etaria": {
+        "jovens": 0.207,
+        "ativos": 0.638,
+        "reformados": 0.154
+      }
+    },
+    "economia": {
+      "pib_per_capita": 11255,
+      "inflacao": 0.1453,
+      "desemprego": 0.0483,
+      "crescimento_real_base": 0.02,
+      "salario_medio": 6190,
+      "produtividade_base": 1.0,
+      "consumo_pct_pib": 0.65,
+      "investimento_pct_pib": 0.2
+    },
+    "financas": {
+      "divida_pct_pib": 0.209,
+      "juro_medio_divida": 0.03
+    },
+    "trabalho": {
+      "setores": {
+        "agricultura": 0.113,
+        "industria": 0.187,
+        "servicos": 0.643,
+        "tecnologia": 0.057
+      },
+      "taxa_participacao": 0.704
+    },
+    "educacao": {
+      "anos_escolaridade": 9.5,
+      "qualificacao_media": 0.35,
+      "fuga_cerebros": 0.02,
+      "niveis": {
+        "basico": 0.45,
+        "secundario": 0.35,
+        "superior": 0.2
+      }
+    },
+    "estado": {
+      "irs_medio": 0.2,
+      "tsu_media": 0.2375,
+      "iva_medio": 0.2,
+      "outras_pct_pib": 0.05
+    },
+    "habitacao": {
+      "preco_m2": 1126,
+      "renda_media": 394,
+      "stock_habitacao": 10165052
+    },
+    "sociedade": {
+      "gini": 0.004,
+      "internet_pct": 0.929,
+      "confianca_institucional": 0.5,
+      "satisfacao_vida": 0.55
+    },
+    "clima": {
+      "percentagem_renovaveis": 0.002,
+      "emissoes_co2_per_capita": 12.5643331681924,
+      "acesso_eletricidade": 1.0,
+      "dependencia_externa": 0.5,
+      "preco_energia_indice": 100
+    }
+  }
+}

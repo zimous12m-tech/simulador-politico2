@@ -1,0 +1,79 @@
+{
+  "nome": "Netherlands",
+  "iso3": "NLD",
+  "regiao": "Europe & Central Asia",
+  "ano_base": 2026,
+  "_nota": "Gerado automaticamente pelo World Bank + UN WPP. Valores por defeito onde o indicador não existe.",
+  "sistemas": {
+    "demografia": {
+      "populacao": 17877117,
+      "fertilidade": 1.43,
+      "mortalidade_base": 0.0095,
+      "esperanca_vida": 81.9,
+      "saldo_migratorio_anual": 144558,
+      "idade_media": 42.4,
+      "composicao_etaria": {
+        "jovens": 0.121,
+        "ativos": 0.628,
+        "reformados": 0.252
+      }
+    },
+    "economia": {
+      "pib_per_capita": 63515,
+      "inflacao": 0.0384,
+      "desemprego": 0.0353,
+      "crescimento_real_base": 0.01,
+      "salario_medio": 34933,
+      "produtividade_base": 1.0,
+      "consumo_pct_pib": 0.65,
+      "investimento_pct_pib": 0.2
+    },
+    "financas": {
+      "divida_pct_pib": 0.006,
+      "juro_medio_divida": 0.03
+    },
+    "trabalho": {
+      "setores": {
+        "agricultura": 0.017,
+        "industria": 0.135,
+        "servicos": 0.792,
+        "tecnologia": 0.057
+      },
+      "taxa_participacao": 0.677
+    },
+    "educacao": {
+      "anos_escolaridade": 9.5,
+      "qualificacao_media": 0.35,
+      "fuga_cerebros": 0.02,
+      "niveis": {
+        "basico": 0.45,
+        "secundario": 0.35,
+        "superior": 0.2
+      }
+    },
+    "estado": {
+      "irs_medio": 0.2,
+      "tsu_media": 0.2375,
+      "iva_medio": 0.2,
+      "outras_pct_pib": 0.05
+    },
+    "habitacao": {
+      "preco_m2": 6352,
+      "renda_media": 2223,
+      "stock_habitacao": 8938558
+    },
+    "sociedade": {
+      "gini": 0.004,
+      "internet_pct": 0.97,
+      "confianca_institucional": 0.5,
+      "satisfacao_vida": 0.55
+    },
+    "clima": {
+      "percentagem_renovaveis": 0.002,
+      "emissoes_co2_per_capita": 6.87570596534106,
+      "acesso_eletricidade": 1.0,
+      "dependencia_externa": 0.5,
+      "preco_energia_indice": 100
+    }
+  }
+}

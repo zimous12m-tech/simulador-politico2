@@ -1,0 +1,79 @@
+{
+  "nome": "Honduras",
+  "iso3": "HND",
+  "regiao": "Latin America & Caribbean ",
+  "ano_base": 2026,
+  "_nota": "Gerado automaticamente pelo World Bank + UN WPP. Valores por defeito onde o indicador não existe.",
+  "sistemas": {
+    "demografia": {
+      "populacao": 10644851,
+      "fertilidade": 2.5,
+      "mortalidade_base": 0.0045,
+      "esperanca_vida": 72.9,
+      "saldo_migratorio_anual": -5044,
+      "idade_media": 25.4,
+      "composicao_etaria": {
+        "jovens": 0.257,
+        "ativos": 0.645,
+        "reformados": 0.099
+      }
+    },
+    "economia": {
+      "pib_per_capita": 3227,
+      "inflacao": 0.0666,
+      "desemprego": 0.0607,
+      "crescimento_real_base": 0.04,
+      "salario_medio": 1775,
+      "produtividade_base": 1.0,
+      "consumo_pct_pib": 0.65,
+      "investimento_pct_pib": 0.2
+    },
+    "financas": {
+      "divida_pct_pib": 0.006,
+      "juro_medio_divida": 0.03
+    },
+    "trabalho": {
+      "setores": {
+        "agricultura": 0.217,
+        "industria": 0.206,
+        "servicos": 0.521,
+        "tecnologia": 0.057
+      },
+      "taxa_participacao": 0.565
+    },
+    "educacao": {
+      "anos_escolaridade": 9.5,
+      "qualificacao_media": 0.35,
+      "fuga_cerebros": 0.02,
+      "niveis": {
+        "basico": 0.45,
+        "secundario": 0.35,
+        "superior": 0.2
+      }
+    },
+    "estado": {
+      "irs_medio": 0.2,
+      "tsu_media": 0.2375,
+      "iva_medio": 0.2,
+      "outras_pct_pib": 0.05
+    },
+    "habitacao": {
+      "preco_m2": 500,
+      "renda_media": 113,
+      "stock_habitacao": 5322425
+    },
+    "sociedade": {
+      "gini": 0.468,
+      "internet_pct": 0.581,
+      "confianca_institucional": 0.5,
+      "satisfacao_vida": 0.55
+    },
+    "clima": {
+      "percentagem_renovaveis": 0.002,
+      "emissoes_co2_per_capita": 1.11312971877201,
+      "acesso_eletricidade": 0.956,
+      "dependencia_externa": 0.5,
+      "preco_energia_indice": 100
+    }
+  }
+}

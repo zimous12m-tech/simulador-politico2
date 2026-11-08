@@ -1,0 +1,87 @@
+{
+  "nome": "Portugal",
+  "iso3": "PRT",
+  "regiao": "Europe & Central Asia",
+  "ano_base": 2026,
+  "_nota": "Gerado automaticamente pelo World Bank + UN WPP. Valores por defeito onde o indicador não existe.",
+  "sistemas": {
+    "demografia": {
+      "populacao": 10578174,
+      "fertilidade": 1.45,
+      "mortalidade_base": 0.0112,
+      "esperanca_vida": 82.3,
+      "saldo_migratorio_anual": 29102,
+      "idade_media": 45.8,
+      "composicao_etaria": {
+        "jovens": 0.094,
+        "ativos": 0.624,
+        "reformados": 0.282
+      }
+    },
+    "economia": {
+      "pib_per_capita": 27634,
+      "inflacao": 0.0431,
+      "desemprego": 0.065,
+      "crescimento_real_base": 0.015,
+      "salario_medio": 15199,
+      "produtividade_base": 1.0,
+      "consumo_pct_pib": 0.65,
+      "investimento_pct_pib": 0.2
+    },
+    "externo": {
+      "exportacoes_pct_pib": 0.471555,
+      "importacoes_pct_pib": 0.459804,
+      "conta_corrente_pct_pib": 0.005535,
+      "reservas_meses_importacao": 2.668386,
+      "cambio_local_usd": 0.92484,
+      "divida_externa_pct_rnb": null
+    },
+    "financas": {
+      "divida_pct_pib": 0.006,
+      "juro_medio_divida": 0.03
+    },
+    "trabalho": {
+      "setores": {
+        "agricultura": 0.029,
+        "industria": 0.241,
+        "servicos": 0.674,
+        "tecnologia": 0.057
+      },
+      "taxa_participacao": 0.586
+    },
+    "educacao": {
+      "anos_escolaridade": 9.5,
+      "qualificacao_media": 0.35,
+      "fuga_cerebros": 0.02,
+      "niveis": {
+        "basico": 0.45,
+        "secundario": 0.35,
+        "superior": 0.2
+      }
+    },
+    "estado": {
+      "irs_medio": 0.2,
+      "tsu_media": 0.2375,
+      "iva_medio": 0.2,
+      "outras_pct_pib": 0.05
+    },
+    "habitacao": {
+      "preco_m2": 2763,
+      "renda_media": 967,
+      "stock_habitacao": 5289087
+    },
+    "sociedade": {
+      "gini": 0.339,
+      "internet_pct": 0.858,
+      "confianca_institucional": 0.5,
+      "satisfacao_vida": 0.55
+    },
+    "clima": {
+      "percentagem_renovaveis": 0.002,
+      "emissoes_co2_per_capita": 3.53665954067309,
+      "acesso_eletricidade": 1.0,
+      "dependencia_externa": 0.5,
+      "preco_energia_indice": 100
+    }
+  }
+}

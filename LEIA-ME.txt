@@ -1,0 +1,79 @@
+═══════════════════════════════════════════════════════════
+  TEORIA DAS SOCIEDADES — Simulador de Políticas Públicas
+  Por Zimous David
+═══════════════════════════════════════════════════════════
+
+O QUE É
+───────
+Um simulador que mostra como diferentes políticas públicas
+afectam a sociedade portuguesa ao longo de décadas.
+
+Não é uma previsão. É uma ferramenta para explorar cenários
+e ver trade-offs (o que ganhas, o que perdes).
+
+COMO ABRIR
+──────────
+1. Duplo clique em simulador_v3.html
+2. Espera 2 segundos
+3. Pronto — corre no browser, sem instalação
+
+Funciona em qualquer browser: Chrome, Edge, Firefox, Safari.
+Funciona offline. Sem internet, sem Python, sem servidor.
+
+COMO USAR
+─────────
+1. Preenche os inputs (podes deixar tudo a 0 para ver o cenário base)
+2. Clica "Correr simulação"
+3. Vê os 8 gráficos e o resumo numérico
+
+Os inputs:
+  • Anos a simular — 30 é um bom ponto de partida
+  • Subsídio por filho — € por criança, por ano
+  • Investimento em educação — % do PIB
+  • Investimento em infraestrutura — % do PIB
+  • Investimento verde — % do PIB (transição energética)
+  • Carbono tax — € por tonelada de CO₂
+  • Subsídio de renda — € por mês
+  • Investimento em habitação — % do PIB
+  • Crises activas — liga/desliga recessões e choques
+  • Seed — número que garante reprodutibilidade
+
+CENÁRIO BASE
+────────────
+Deixa tudo a 0 e desmarca "Crises activas".
+Este é o cenário de referência — mostra o que acontece
+sem políticas novas.
+
+Valores típicos ao fim de 30 anos:
+  População:    12,5 milhões
+  PIB per capita: 33 000 €
+  Dívida:       80% do PIB
+
+DICAS
+─────
+• Testa uma política de cada vez para ver o efeito isolado
+• Usa a mesma seed para comparar cenários
+• Desmarca "Crises" para ver só o efeito das políticas
+• Marca "Crises" para ver como o sistema aguenta choques
+
+TRADE-OFFS A EXPLORAR
+─────────────────────
+1. Investir em educação melhora a qualificação, mas custa dinheiro
+2. Investir em verde reduz emissões, mas aumenta a dívida
+3. Subsídios sociais reduzem a desigualdade, mas custam ao Estado
+4. Carbono tax gera receita, mas pode não reduzir emissões sozinha
+
+LIMITAÇÕES
+──────────
+• Modelo calibrado para 30-50 anos
+• Não prevê crises específicas (usa probabilidades)
+• Alguns efeitos de longo prazo são simplificados
+• É educativo, não académico
+
+LICENÇA
+───────
+Livre. Podes partilhar, copiar, modificar. Sem garantias.
+
+═══════════════════════════════════════════════════════════
+  Dúvidas ou sugestões: contacta Zimous David
+═══════════════════════════════════════════════════════════

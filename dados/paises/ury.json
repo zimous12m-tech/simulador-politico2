@@ -1,0 +1,79 @@
+{
+  "nome": "Uruguay",
+  "iso3": "URY",
+  "regiao": "Latin America & Caribbean ",
+  "ano_base": 2026,
+  "_nota": "Gerado automaticamente pelo World Bank + UN WPP. Valores por defeito onde o indicador não existe.",
+  "sistemas": {
+    "demografia": {
+      "populacao": 3388081,
+      "fertilidade": 1.41,
+      "mortalidade_base": 0.0098,
+      "esperanca_vida": 78.1,
+      "saldo_migratorio_anual": -1501,
+      "idade_media": 36.4,
+      "composicao_etaria": {
+        "jovens": 0.169,
+        "ativos": 0.634,
+        "reformados": 0.198
+      }
+    },
+    "economia": {
+      "pib_per_capita": 23378,
+      "inflacao": 0.0587,
+      "desemprego": 0.0835,
+      "crescimento_real_base": 0.015,
+      "salario_medio": 12858,
+      "produtividade_base": 1.0,
+      "consumo_pct_pib": 0.65,
+      "investimento_pct_pib": 0.2
+    },
+    "financas": {
+      "divida_pct_pib": 0.614,
+      "juro_medio_divida": 0.03
+    },
+    "trabalho": {
+      "setores": {
+        "agricultura": 0.081,
+        "industria": 0.177,
+        "servicos": 0.685,
+        "tecnologia": 0.057
+      },
+      "taxa_participacao": 0.646
+    },
+    "educacao": {
+      "anos_escolaridade": 9.5,
+      "qualificacao_media": 0.35,
+      "fuga_cerebros": 0.02,
+      "niveis": {
+        "basico": 0.45,
+        "secundario": 0.35,
+        "superior": 0.2
+      }
+    },
+    "estado": {
+      "irs_medio": 0.2,
+      "tsu_media": 0.2375,
+      "iva_medio": 0.2,
+      "outras_pct_pib": 0.05
+    },
+    "habitacao": {
+      "preco_m2": 2338,
+      "renda_media": 818,
+      "stock_habitacao": 1694040
+    },
+    "sociedade": {
+      "gini": 0.409,
+      "internet_pct": 0.909,
+      "confianca_institucional": 0.5,
+      "satisfacao_vida": 0.55
+    },
+    "clima": {
+      "percentagem_renovaveis": 0.002,
+      "emissoes_co2_per_capita": 2.41753370123087,
+      "acesso_eletricidade": 1.0,
+      "dependencia_externa": 0.5,
+      "preco_energia_indice": 100
+    }
+  }
+}

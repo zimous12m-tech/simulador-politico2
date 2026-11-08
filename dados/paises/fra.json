@@ -1,0 +1,79 @@
+{
+  "nome": "France",
+  "iso3": "FRA",
+  "regiao": "Europe & Central Asia",
+  "ano_base": 2026,
+  "_nota": "Gerado automaticamente pelo World Bank + UN WPP. Valores por defeito onde o indicador não existe.",
+  "sistemas": {
+    "demografia": {
+      "populacao": 68372286,
+      "fertilidade": 1.66,
+      "mortalidade_base": 0.0094,
+      "esperanca_vida": 82.8,
+      "saldo_migratorio_anual": 91862,
+      "idade_media": 42.6,
+      "composicao_etaria": {
+        "jovens": 0.119,
+        "ativos": 0.627,
+        "reformados": 0.253
+      }
+    },
+    "economia": {
+      "pib_per_capita": 44700,
+      "inflacao": 0.0488,
+      "desemprego": 0.0733,
+      "crescimento_real_base": 0.012,
+      "salario_medio": 24585,
+      "produtividade_base": 1.0,
+      "consumo_pct_pib": 0.65,
+      "investimento_pct_pib": 0.2
+    },
+    "financas": {
+      "divida_pct_pib": 0.006,
+      "juro_medio_divida": 0.03
+    },
+    "trabalho": {
+      "setores": {
+        "agricultura": 0.024,
+        "industria": 0.181,
+        "servicos": 0.738,
+        "tecnologia": 0.057
+      },
+      "taxa_participacao": 0.559
+    },
+    "educacao": {
+      "anos_escolaridade": 9.5,
+      "qualificacao_media": 0.35,
+      "fuga_cerebros": 0.02,
+      "niveis": {
+        "basico": 0.45,
+        "secundario": 0.35,
+        "superior": 0.2
+      }
+    },
+    "estado": {
+      "irs_medio": 0.2,
+      "tsu_media": 0.2375,
+      "iva_medio": 0.2,
+      "outras_pct_pib": 0.05
+    },
+    "habitacao": {
+      "preco_m2": 4470,
+      "renda_media": 1564,
+      "stock_habitacao": 34186143
+    },
+    "sociedade": {
+      "gini": 0.318,
+      "internet_pct": 0.868,
+      "confianca_institucional": 0.5,
+      "satisfacao_vida": 0.55
+    },
+    "clima": {
+      "percentagem_renovaveis": 0.002,
+      "emissoes_co2_per_capita": 4.15598361008436,
+      "acesso_eletricidade": 1.0,
+      "dependencia_externa": 0.5,
+      "preco_energia_indice": 100
+    }
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "nome": "Congo, Dem. Rep.",
+  "iso3": "COD",
+  "regiao": "Sub-Saharan Africa ",
+  "ano_base": 2026,
+  "_nota": "Gerado automaticamente pelo World Bank + UN WPP. Valores por defeito onde o indicador não existe.",
+  "sistemas": {
+    "demografia": {
+      "populacao": 105789731,
+      "fertilidade": 6.05,
+      "mortalidade_base": 0.0085,
+      "esperanca_vida": 61.9,
+      "saldo_migratorio_anual": -14992,
+      "idade_media": 16.5,
+      "composicao_etaria": {
+        "jovens": 0.328,
+        "ativos": 0.652,
+        "reformados": 0.02
+      }
+    },
+    "economia": {
+      "pib_per_capita": 660,
+      "inflacao": 0.0003,
+      "desemprego": 0.0447,
+      "crescimento_real_base": 0.055,
+      "salario_medio": 363,
+      "produtividade_base": 1.0,
+      "consumo_pct_pib": 0.65,
+      "investimento_pct_pib": 0.2
+    },
+    "financas": {
+      "divida_pct_pib": 0.149,
+      "juro_medio_divida": 0.03
+    },
+    "trabalho": {
+      "setores": {
+        "agricultura": 0.561,
+        "industria": 0.075,
+        "servicos": 0.307,
+        "tecnologia": 0.057
+      },
+      "taxa_participacao": 0.644
+    },
+    "educacao": {
+      "anos_escolaridade": 9.5,
+      "qualificacao_media": 0.35,
+      "fuga_cerebros": 0.02,
+      "niveis": {
+        "basico": 0.45,
+        "secundario": 0.35,
+        "superior": 0.2
+      }
+    },
+    "estado": {
+      "irs_medio": 0.2,
+      "tsu_media": 0.2375,
+      "iva_medio": 0.2,
+      "outras_pct_pib": 0.05
+    },
+    "habitacao": {
+      "preco_m2": 500,
+      "renda_media": 23,
+      "stock_habitacao": 52894865
+    },
+    "sociedade": {
+      "gini": 0.004,
+      "internet_pct": 0.19,
+      "confianca_institucional": 0.5,
+      "satisfacao_vida": 0.55
+    },
+    "clima": {
+      "percentagem_renovaveis": 0.002,
+      "emissoes_co2_per_capita": 0.0580434409082674,
+      "acesso_eletricidade": 0.221,
+      "dependencia_externa": 0.5,
+      "preco_energia_indice": 100
+    }
+  }
+}

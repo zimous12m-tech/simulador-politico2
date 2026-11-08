@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#3b82f6">
+  <meta name="description" content="Simulador educativo de políticas públicas">
+  <title>Teoria das Sociedades</title>
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="manifest" href="./manifest.json">
+  <link rel="icon" type="image/svg+xml" href="./icone.svg">
+  <link rel="apple-touch-icon" href="./icone.svg">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Teoria das Sociedades">
+</head>
+<body>
+
+<!-- ═══════════════ ECRÃ 1: ESCOLHER PAÍS ═══════════════ -->
+<section id="ecra-pais" class="ecra ativo">
+  <div class="container-centrado">
+    <h1 class="titulo-principal">Teoria das Sociedades</h1>
+    <p class="subtitulo">Escolhe um país para simular. Ou cria o teu com dados personalizados.</p>
+
+    <div class="barra-acoes-pais">
+      <button class="botao-criar-pais" onclick="irParaCriarPais()">
+        + Criar país personalizado
+      </button>
+      <button class="botao-carregar-pais" onclick="abrirUploadPais()">
+        📂 Carregar .json
+      </button>
+      <input type="file" id="input-upload-pais" accept=".json" style="display:none;" onchange="carregarPaisUpload(event)">
+    </div>
+
+    <div class="barra-pesquisa">
+      <input
+        type="text"
+        id="pesquisa-pais"
+        placeholder="🔍 Pesquisar país pelo nome..."
+        oninput="filtrarPaises()"
+        autocomplete="off">
+      <div class="filtros-pais">
+        <select id="filtro-regiao" onchange="filtrarPaises()">
+          <option value="">Todas as regiões</option>
+        </select>
+        <select id="ordenar-pais" onchange="filtrarPaises()">
+          <option value="nome">Ordenar: Nome (A-Z)</option>
+          <option value="populacao">Ordenar: População (maior)</option>
+          <option value="pib">Ordenar: PIB per capita (maior)</option>
+          <option value="idade">Ordenar: Idade média (maior)</option>
+        </select>
+      </div>
+      <p id="contador-paises" class="contador-paises"></p>
+    </div>
+
+    <div id="lista-paises" class="grelha-paises"></div>
+
+    <div class="acoes-centradas">
+      <p id="pais-selecionado-texto" class="pais-selecionado-texto"></p>
+      <button class="botao-primario" id="btn-pais-proximo" disabled onclick="irParaCenario()">
+        Continuar →
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ ECRÃ 1.5: CRIAR PAÍS PERSONALIZADO ═══════════════ -->
+<section id="ecra-criar-pais" class="ecra">
+  <div class="container-centrado">
+    <div class="cabecalho-pais">
+      <button class="botao-voltar" onclick="voltarParaPaises()">← Voltar</button>
+      <div class="pais-atual">
+        <span class="bandeira-grande">🌍</span>
+        <span>Criar país personalizado</span>
+      </div>
+    </div>
+
+    <h1 class="titulo-principal">Criar país</h1>
+    <p class="subtitulo">Define os dados base. Podes usar valores reais de um país num ano específico.</p>
+
+    <form id="form-criar-pais" onsubmit="event.preventDefault(); guardarPaisPersonalizado();">
+
+      <!-- ── IDENTIFICAÇÃO ── -->
+      <div class="cartao">
+        <h3>Identificação</h3>
+        <div class="grelha-form">
+          <label>
+            Nome do país
+            <input type="text" id="cp-nome" value="O meu país" required>
+          </label>
+          <label>
+            Ano base
+            <input type="number" id="cp-ano" value="2026" min="1900" max="2100">
+          </label>
+        </div>
+      </div>
+
+      <!-- ── DEMOGRAFIA ── -->
+      <div class="cartao">
+        <h3>Demografia</h3>
+        <div class="grelha-form">
+          <label>
+            População (habitantes)
+            <input type="number" id="cp-populacao" value="10000000" step="100000" required>
+          </label>
+          <label>
+            Idade média (anos)
+            <input type="number" id="cp-idade" value="42" step="0.1" required>
+          </label>
+          <label>
+            Fertilidade (filhos por mulher)
+            <input type="number" id="cp-fertilidade" value="1.5" step="0.01" required>
+          </label>
+          <label>
+            Esperança de vida (anos)
+            <input type="number" id="cp-esperanca" value="78" step="0.1">
+          </label>
+          <label>
+            Saldo migratório anual
+            <input type="number" id="cp-migracao" value="0" step="1000">
+          </label>
+        </div>
+      </div>
+
+      <!-- ── ECONOMIA ── -->
+      <div class="cartao">
+        <h3>Economia</h3>
+        <div class="grelha-form">
+          <label>
+            PIB per capita (€/ano)
+            <input type="number" id="cp-pib" value="20000" step="100" required>
+          </label>
+          <label>
+            Salário médio (€/ano)
+            <input type="number" id="cp-salario" value="15000" step="100">
+          </label>
+          <label>
+            Desemprego (%)
+            <input type="number" id="cp-desemprego" value="6" step="0.1">
+          </label>
+          <label>
+            Inflação (%)
+            <input type="number" id="cp-inflacao" value="2.5" step="0.1">
+          </label>
+        </div>
+      </div>
+
+      <!-- ── TRABALHO ── -->
+      <div class="cartao">
+        <h3>Trabalho</h3>
+        <p class="aviso-seccao">A soma dos sectores deve ser aproximadamente 100%.</p>
+        <div class="grelha-form">
+          <label>
+            Agricultura (%)
+            <input type="number" id="cp-agricultura" value="5" step="0.1">
+          </label>
+          <label>
+            Indústria (%)
+            <input type="number" id="cp-industria" value="20" step="0.1">
+          </label>
+          <label>
+            Serviços (%)
+            <input type="number" id="cp-servicos" value="68" step="0.1">
+          </label>
+          <label>
+            Tecnologia (%)
+            <input type="number" id="cp-tecnologia" value="7" step="0.1">
+          </label>
+        </div>
+      </div>
+
+      <!-- ── EDUCAÇÃO ── -->
+      <div class="cartao">
+        <h3>Educação</h3>
+        <div class="grelha-form">
+          <label>
+            Anos de escolaridade (média)
+            <input type="number" id="cp-escolaridade" value="10" step="0.1">
+          </label>
+          <label>
+            Qualificação média (%)
+            <input type="number" id="cp-qualificacao" value="40" step="0.1">
+          </label>
+        </div>
+      </div>
+
+      <!-- ── FINANÇAS ── -->
+      <div class="cartao">
+        <h3>Estado e Finanças</h3>
+        <div class="grelha-form">
+          <label>
+            Dívida pública (% PIB)
+            <input type="number" id="cp-divida" value="60" step="1">
+          </label>
+          <label>
+            Juro médio da dívida (%)
+            <input type="number" id="cp-juro" value="3" step="0.1">
+          </label>
+        </div>
+      </div>
+
+      <!-- ── HABITAÇÃO ── -->
+      <div class="cartao">
+        <h3>Habitação</h3>
+        <div class="grelha-form">
+          <label>
+            Preço m² (€)
+            <input type="number" id="cp-preco-m2" value="2000" step="50">
+          </label>
+          <label>
+            Renda média mensal (€)
+            <input type="number" id="cp-renda" value="700" step="10">
+          </label>
+        </div>
+      </div>
+
+      <!-- ── SOCIEDADE ── -->
+      <div class="cartao">
+        <h3>Sociedade</h3>
+        <div class="grelha-form">
+          <label>
+            Gini (0-1)
+            <input type="number" id="cp-gini" value="0.33" step="0.01">
+          </label>
+          <label>
+            Confiança institucional (%)
+            <input type="number" id="cp-confianca" value="50" step="1">
+          </label>
+          <label>
+            Satisfação com a vida (%)
+            <input type="number" id="cp-satisfacao" value="60" step="1">
+          </label>
+        </div>
+      </div>
+
+      <!-- ── CLIMA ── -->
+      <div class="cartao">
+        <h3>Clima / Energia</h3>
+        <div class="grelha-form">
+          <label>
+            Emissões CO₂ per capita (t/ano)
+            <input type="number" id="cp-emissoes" value="4.5" step="0.1">
+          </label>
+          <label>
+            % Renováveis
+            <input type="number" id="cp-renovaveis" value="30" step="1">
+          </label>
+          <label>
+            Dependência externa (%)
+            <input type="number" id="cp-dependencia" value="70" step="1">
+          </label>
+        </div>
+      </div>
+
+      <!-- ── BOTÕES ── -->
+      <div class="acoes-form">
+        <button type="button" class="botao-secundario" onclick="preencherComAlemanha2004()">
+          🇩🇪 Exemplo: Alemanha 2004
+        </button>
+        <button type="button" class="botao-secundario" onclick="preencherComPortugal2004()">
+          🇵🇹 Exemplo: Portugal 2004
+        </button>
+      </div>
+
+      <div class="acoes-form-principais">
+        <button type="button" class="botao-secundario" onclick="descarregarPaisPersonalizado()">
+          💾 Descarregar .json
+        </button>
+        <button type="submit" class="botao-primario">
+          Guardar e usar →
+        </button>
+      </div>
+
+    </form>
+  </div>
+</section>
+
+<!-- ═══════════════ ECRÃ 2: CONFIGURAÇÃO DO CENÁRIO ═══════════════ -->
+<section id="ecra-cenario" class="ecra">
+  <div class="container-centrado">
+    <div class="cabecalho-pais">
+      <button class="botao-voltar" onclick="voltarParaPaises()">← Trocar país</button>
+      <div class="pais-atual">
+        <span id="bandeira-pais-cenario" class="bandeira-grande"></span>
+        <span id="nome-pais-cenario"></span>
+      </div>
+    </div>
+
+    <h1 class="titulo-principal">Configuração do cenário</h1>
+    <p class="subtitulo">Define as políticas a aplicar. Os valores de base são do país escolhido.</p>
+
+    <div id="alerta-crise" class="alerta-crise" style="display:none;"></div>
+    <div id="alerta-clima" class="alerta-clima" style="display:none;"></div>
+    <div id="alerta-tendencia" class="alerta-tendencia" style="display:none;">
+      Modo tendência — crises desligadas.
+    </div>
+
+    <div class="cartao">
+      <h3>Políticas</h3>
+      <label>Anos a simular: <input type="number" id="input-anos" value="30"></label>
+      <label>Subsídio por filho (€/ano): <input type="number" id="input-subsidio" value="0"></label>
+      <label>Investimento em educação (% PIB): <input type="number" id="input-educacao" value="0" step="0.1"></label>
+      <label>Investimento em infraestrutura (% PIB): <input type="number" id="input-infra" value="0" step="0.1"></label>
+      <label>Investimento verde / transição energética (% PIB): <input type="number" id="input-verde" value="0" step="0.1"></label>
+      <label>Carbono tax (€/tonelada CO₂): <input type="number" id="input-carbono" value="0" step="5"></label>
+      <label>Subsídio de renda (€/mês): <input type="number" id="input-subsidio-renda" value="0" step="50"></label>
+      <label>Investimento público em habitação (% PIB): <input type="number" id="input-invest-habitacao" value="0" step="0.1"></label>
+      <label>Crescimento real da procura externa (%/ano): <input type="number" id="input-procura-externa" value="2" step="0.1"></label>
+      <label>Taxa de juro externa de referência (%/ano): <input type="number" id="input-juro-externo" value="3.5" step="0.1"></label>
+      <label>Inflação externa dos bens importados (%/ano): <input type="number" id="input-inflacao-externa" value="2" step="0.1"></label>
+      <label>Desequilíbrio externo absorvido por reservas (%): <input type="number" id="input-intervencao-reservas" value="0" min="0" max="100" step="5"></label>
+
+      <h3>Sistema político</h3>
+      <label>Regime
+        <select id="input-regime">
+          <option value="democracia" selected>Democracia competitiva</option>
+          <option value="hibrido">Regime híbrido</option>
+          <option value="autoritario">Regime autoritário</option>
+        </select>
+      </label>
+      <label>Qualidade institucional (%): <input type="number" id="input-instituicoes" value="65" min="0" max="100" step="1"></label>
+      <label>Influência de grupos de interesse (%): <input type="number" id="input-grupos-interesse" value="25" min="0" max="100" step="1"></label>
+      <label>Ciclo eleitoral (anos): <input type="number" id="input-ciclo-eleitoral" value="4" min="2" max="8" step="1"></label>
+      <label>Preferência por intervenção económica (%): <input type="number" id="input-pref-intervencao" value="50" min="0" max="100" step="1"></label>
+      <label>Preferência por tradicionalismo social (%): <input type="number" id="input-pref-tradicao" value="50" min="0" max="100" step="1"></label>
+      <label>Preferência por abertura externa (%): <input type="number" id="input-pref-abertura" value="50" min="0" max="100" step="1"></label>
+      <label>Prioridade climática do eleitorado (%): <input type="number" id="input-pref-clima" value="50" min="0" max="100" step="1"></label>
+
+      <label class="label-checkbox">
+        <input type="checkbox" id="input-crises" checked>
+        Crises activas (recessões, choques externos, etc.)
+      </label>
+
+      <label>Seed aleatória (para reprodutibilidade): <input type="number" id="input-seed" value="12345"></label>
+
+      <button class="botao-primario" onclick="correrTeste()">Correr simulação</button>
+      <button class="botao-secundario" onclick="compararCenarioBase()">Comparar com cenário sem políticas</button>
+    </div>
+
+    <div id="graficos" class="grelha-graficos" style="display:none;">
+      <div class="cartao-grafico"><h3>População</h3><div class="canvas-wrapper"><canvas id="g-populacao"></canvas></div></div>
+      <div class="cartao-grafico"><h3>PIB per capita e salário médio</h3><div class="canvas-wrapper"><canvas id="g-economia"></canvas></div></div>
+      <div class="cartao-grafico"><h3>Inflação e taxas de juro</h3><div class="canvas-wrapper"><canvas id="g-monetaria"></canvas></div></div>
+      <div class="cartao-grafico"><h3>Comércio externo e conta corrente</h3><div class="canvas-wrapper"><canvas id="g-externo"></canvas></div></div>
+      <div class="cartao-grafico"><h3>Câmbio e preços de importação</h3><div class="canvas-wrapper"><canvas id="g-cambio"></canvas></div></div>
+      <div class="cartao-grafico"><h3>Reservas cambiais (meses de importações)</h3><div class="canvas-wrapper"><canvas id="g-reservas"></canvas></div></div>
+      <div class="cartao-grafico"><h3>Desemprego e qualificação</h3><div class="canvas-wrapper"><canvas id="g-trabalho"></canvas></div></div>
+      <div class="cartao-grafico"><h3>Dívida pública e receita de carbono</h3><div class="canvas-wrapper"><canvas id="g-divida"></canvas></div></div>
+      <div class="cartao-grafico"><h3>Coesão, Gini e satisfação</h3><div class="canvas-wrapper"><canvas id="g-sociedade"></canvas></div></div>
+      <div class="cartao-grafico"><h3>Preço m² e taxa de esforço</h3><div class="canvas-wrapper"><canvas id="g-habitacao"></canvas></div></div>
+      <div class="cartao-grafico"><h3>Emissões CO₂ e % renováveis</h3><div class="canvas-wrapper"><canvas id="g-clima-emissoes"></canvas></div></div>
+      <div class="cartao-grafico"><h3>Preço da energia e dependência externa</h3><div class="canvas-wrapper"><canvas id="g-clima-energia"></canvas></div></div>
+    </div>
+
+    <div id="resultado" class="cartao" style="display:none;">
+      <h3>Resultado numérico</h3>
+      <pre id="output"></pre>
+    </div>
+  </div>
+</section>
+
+<script src="chart.umd.min.js"></script>
+<script src="dados/paises.js"></script>
+<script type="module" src="app.js"></script>
+<script>
+  if ("serviceWorker" in navigator && location.protocol.startsWith("http")) {
+    window.addEventListener("load", () => {
+      navigator.serviceWorker.register("./service-worker.js")
+        .then((reg) => console.log("Service Worker registado:", reg.scope))
+        .catch((err) => console.warn("Service Worker falhou:", err));
+    });
+  }
+</script>
+</body>
+</html>

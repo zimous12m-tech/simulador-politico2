@@ -1,0 +1,19 @@
+{
+  "name": "Simulador de Sociedade v3",
+  "short_name": "Simulador v3",
+  "description": "Simulador educativo de políticas públicas para Portugal",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0f172a",
+  "theme_color": "#3b82f6",
+  "lang": "pt-PT",
+  "icons": [
+    {
+      "src": "./icone.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

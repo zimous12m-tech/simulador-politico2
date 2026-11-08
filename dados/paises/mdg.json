@@ -1,0 +1,79 @@
+{
+  "nome": "Madagascar",
+  "iso3": "MDG",
+  "regiao": "Sub-Saharan Africa ",
+  "ano_base": 2026,
+  "_nota": "Gerado automaticamente pelo World Bank + UN WPP. Valores por defeito onde o indicador não existe.",
+  "sistemas": {
+    "demografia": {
+      "populacao": 31195932,
+      "fertilidade": 3.97,
+      "mortalidade_base": 0.0075,
+      "esperanca_vida": 63.6,
+      "saldo_migratorio_anual": -1487,
+      "idade_media": 18.5,
+      "composicao_etaria": {
+        "jovens": 0.312,
+        "ativos": 0.651,
+        "reformados": 0.037
+      }
+    },
+    "economia": {
+      "pib_per_capita": 514,
+      "inflacao": 0.0987,
+      "desemprego": 0.0304,
+      "crescimento_real_base": 0.055,
+      "salario_medio": 283,
+      "produtividade_base": 1.0,
+      "consumo_pct_pib": 0.65,
+      "investimento_pct_pib": 0.2
+    },
+    "financas": {
+      "divida_pct_pib": 0.006,
+      "juro_medio_divida": 0.03
+    },
+    "trabalho": {
+      "setores": {
+        "agricultura": 0.659,
+        "industria": 0.092,
+        "servicos": 0.192,
+        "tecnologia": 0.057
+      },
+      "taxa_participacao": 0.855
+    },
+    "educacao": {
+      "anos_escolaridade": 9.5,
+      "qualificacao_media": 0.35,
+      "fuga_cerebros": 0.02,
+      "niveis": {
+        "basico": 0.45,
+        "secundario": 0.35,
+        "superior": 0.2
+      }
+    },
+    "estado": {
+      "irs_medio": 0.2,
+      "tsu_media": 0.2375,
+      "iva_medio": 0.2,
+      "outras_pct_pib": 0.05
+    },
+    "habitacao": {
+      "preco_m2": 500,
+      "renda_media": 18,
+      "stock_habitacao": 15597966
+    },
+    "sociedade": {
+      "gini": 0.004,
+      "internet_pct": 0.182,
+      "confianca_institucional": 0.5,
+      "satisfacao_vida": 0.55
+    },
+    "clima": {
+      "percentagem_renovaveis": 0.831,
+      "emissoes_co2_per_capita": 0.147269201638214,
+      "acesso_eletricidade": 0.394,
+      "dependencia_externa": 0.5,
+      "preco_energia_indice": 100
+    }
+  }
+}

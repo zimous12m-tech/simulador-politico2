@@ -1,0 +1,79 @@
+{
+  "nome": "Djibouti",
+  "iso3": "DJI",
+  "regiao": "Middle East, North Africa, Afghanistan & Pakistan",
+  "ano_base": 2026,
+  "_nota": "Gerado automaticamente pelo World Bank + UN WPP. Valores por defeito onde o indicador não existe.",
+  "sistemas": {
+    "demografia": {
+      "populacao": 1152944,
+      "fertilidade": 2.61,
+      "mortalidade_base": 0.0075,
+      "esperanca_vida": 66.0,
+      "saldo_migratorio_anual": 500,
+      "idade_media": 25.2,
+      "composicao_etaria": {
+        "jovens": 0.258,
+        "ativos": 0.645,
+        "reformados": 0.097
+      }
+    },
+    "economia": {
+      "pib_per_capita": 3381,
+      "inflacao": 0.0145,
+      "desemprego": 0.2607,
+      "crescimento_real_base": 0.04,
+      "salario_medio": 1860,
+      "produtividade_base": 1.0,
+      "consumo_pct_pib": 0.65,
+      "investimento_pct_pib": 0.2
+    },
+    "financas": {
+      "divida_pct_pib": 0.006,
+      "juro_medio_divida": 0.03
+    },
+    "trabalho": {
+      "setores": {
+        "agricultura": 0.011,
+        "industria": 0.059,
+        "servicos": 0.873,
+        "tecnologia": 0.057
+      },
+      "taxa_participacao": 0.318
+    },
+    "educacao": {
+      "anos_escolaridade": 9.5,
+      "qualificacao_media": 0.35,
+      "fuga_cerebros": 0.02,
+      "niveis": {
+        "basico": 0.45,
+        "secundario": 0.35,
+        "superior": 0.2
+      }
+    },
+    "estado": {
+      "irs_medio": 0.2,
+      "tsu_media": 0.2375,
+      "iva_medio": 0.2,
+      "outras_pct_pib": 0.05
+    },
+    "habitacao": {
+      "preco_m2": 500,
+      "renda_media": 118,
+      "stock_habitacao": 576472
+    },
+    "sociedade": {
+      "gini": 0.004,
+      "internet_pct": 0.648,
+      "confianca_institucional": 0.5,
+      "satisfacao_vida": 0.55
+    },
+    "clima": {
+      "percentagem_renovaveis": 0.269,
+      "emissoes_co2_per_capita": 0.763263436905869,
+      "acesso_eletricidade": 0.652,
+      "dependencia_externa": 0.5,
+      "preco_energia_indice": 100
+    }
+  }
+}

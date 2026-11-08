@@ -1,0 +1,79 @@
+{
+  "nome": "Botswana",
+  "iso3": "BWA",
+  "regiao": "Sub-Saharan Africa ",
+  "ano_base": 2026,
+  "_nota": "Gerado automaticamente pelo World Bank + UN WPP. Valores por defeito onde o indicador não existe.",
+  "sistemas": {
+    "demografia": {
+      "populacao": 2480244,
+      "fertilidade": 2.73,
+      "mortalidade_base": 0.0057,
+      "esperanca_vida": 69.2,
+      "saldo_migratorio_anual": -6487,
+      "idade_media": 25.7,
+      "composicao_etaria": {
+        "jovens": 0.254,
+        "ativos": 0.644,
+        "reformados": 0.101
+      }
+    },
+    "economia": {
+      "pib_per_capita": 7827,
+      "inflacao": 0.0507,
+      "desemprego": 0.2338,
+      "crescimento_real_base": 0.03,
+      "salario_medio": 4305,
+      "produtividade_base": 1.0,
+      "consumo_pct_pib": 0.65,
+      "investimento_pct_pib": 0.2
+    },
+    "financas": {
+      "divida_pct_pib": 0.197,
+      "juro_medio_divida": 0.03
+    },
+    "trabalho": {
+      "setores": {
+        "agricultura": 0.17,
+        "industria": 0.149,
+        "servicos": 0.625,
+        "tecnologia": 0.057
+      },
+      "taxa_participacao": 0.683
+    },
+    "educacao": {
+      "anos_escolaridade": 9.5,
+      "qualificacao_media": 0.35,
+      "fuga_cerebros": 0.02,
+      "niveis": {
+        "basico": 0.45,
+        "secundario": 0.35,
+        "superior": 0.2
+      }
+    },
+    "estado": {
+      "irs_medio": 0.2,
+      "tsu_media": 0.2375,
+      "iva_medio": 0.2,
+      "outras_pct_pib": 0.05
+    },
+    "habitacao": {
+      "preco_m2": 783,
+      "renda_media": 274,
+      "stock_habitacao": 1240122
+    },
+    "sociedade": {
+      "gini": 0.004,
+      "internet_pct": 0.579,
+      "confianca_institucional": 0.5,
+      "satisfacao_vida": 0.55
+    },
+    "clima": {
+      "percentagem_renovaveis": 0.002,
+      "emissoes_co2_per_capita": 2.7096930785842,
+      "acesso_eletricidade": 0.76,
+      "dependencia_externa": 0.5,
+      "preco_energia_indice": 100
+    }
+  }
+}
